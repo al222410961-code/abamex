@@ -43,7 +43,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--white);
+    background: var(--bg-light);
     color:#111;
 }
 
@@ -136,11 +136,214 @@ body{
 }
 
 /* ===================================== */
+/* pruebas de integración */
+/* ===================================== */
+
+/* =========================
+   SECTION
+========================= */
+
+.docs-section{
+  width:100%;
+  padding:20px 0;
+  overflow:hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.docs-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:18px;
+}
+
+.docs-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.docs-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.doc-icon{
+  width: 30px;
+  height:30px;
+  color:#001450;
+
+  stroke-width:2.2;
+
+  transition:.3s ease;
+}
+
+.docs-title h2{
+  font-size:1.7rem;
+  font-weight:700;
+  margin:0;
+  color:#001450;
+}
+
+.see-all{
+  text-decoration:none;
+  color:#0046b8;
+  font-weight:600;
+  font-size:.95rem;
+}
+
+/* =========================
+   CARRUSEL
+========================= */
+
+.docs-carousel{
+  display:flex;
+  gap:20px;
+
+  overflow-x:auto;
+  overflow-y:visible;
+
+  scroll-behavior:smooth;
+
+  padding:12px 4px 18px;
+
+  align-items:stretch;
+}
+
+.docs-carousel::-webkit-scrollbar{
+  height:8px;
+}
+
+.docs-carousel::-webkit-scrollbar-thumb{
+  background:var(--bg-light);
+  border-radius:20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.doc-card{
+  min-width:300px;
+  max-width:300px;
+
+  background:#fff;
+  border-radius:16px;
+
+  overflow:visible;
+
+  border:1px solid #e4e8ee;
+
+  transition:.3s ease;
+
+  cursor:pointer;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+  flex-shrink:0;
+}
+
+.doc-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 6px 6px rgba(0,0,0,.12);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.doc-thumb{
+  position:relative;
+  height:180px;
+  overflow:hidden;
+  background:#eef2f7;
+}
+
+.doc-thumb img{
+  width:300px;
+  height:300px;
+  object-fit:cover;
+
+  transition:.4s ease;
+}
+
+.doc-card:hover .doc-thumb img{
+  transform:scale(1.08);
+}
+
+/* =========================
+   TYPE BADGE
+========================= */
+
+.doc-type{
+  position:absolute;
+  top:14px;
+  left:14px;
+
+  padding:5px 10px;
+
+  border-radius:8px;
+
+  font-size:.75rem;
+  font-weight:700;
+
+  color:#fff;
+}
+
+.doc-type.pdf{
+  background:#e53935;
+}
+
+.doc-type.excel{
+  background:#1b9e4b;
+}
+
+.doc-type.video{
+  background:#111;
+}
+
+/* =========================
+   BODY
+========================= */
+
+.doc-body{
+  padding:18px;
+}
+
+.doc-body h3{
+  font-size:1.1rem;
+  font-weight:700;
+  margin-bottom:10px;
+  color:#001450;
+}
+
+.doc-body p{
+  font-size:.88rem;
+  color:#687385;
+  line-height:1.5;
+  margin-bottom:18px;
+}
+
+.doc-footer{
+  border-top:1px solid #e5e7eb;
+  padding-top:12px;
+
+  font-size:.82rem;
+  color:#6b7280;
+}
+
+
+
+/* ===================================== */
 /* CARD */
 /* ===================================== */
 
 .docs-card{
-    background:white;
+    background:var(--white);
     border-radius:18px;
     padding:20px;
     box-shadow:var(--card-shadow);
@@ -222,33 +425,47 @@ body{
 /*--- boton---*/
 
 .categoria-btn{
-    background:var (--white);
-    border-radius: 14px;
+    background:var(--white);
+
+    border-radius:14px;
+
     padding:10px 18px;
+
     display:flex;
     align-items:center;
     gap:15px;
+
     cursor:pointer;
+
     transition:0.3s;
+
     box-shadow:var(--card-shadow);
 
     min-height:50px;
 }
-
 /*--- hover---*/
 
 .categoria-btn:hover{
     transform:translateY(-5px);
+
     background:var(--mobil-blue);
+
     color:white;
 }
 
 /*--- icon---*/
 
-.categoria-btn i{
-    font-size:35px;
+.categoria-icon{
+    width:30px;
+    height:30px;
+
     color:var(--mobil-dark-blue);
+
+    stroke-width:2.2;
+
     transition:0.3s;
+
+    flex-shrink:0;
 }
 /*--- contenedor texto---*/
 
@@ -280,8 +497,10 @@ body{
     color:var(--white);
 }
 
-.categoria-btn:hover i{
-    color:var(--white);
+/*--- hover del icon ---*/
+
+.categoria-btn:hover .categoria-icon{
+    color:white;
 }
 
 
