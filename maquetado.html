@@ -1,385 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Nombre de la página -->
     <title>Portal de Documentos</title>
 
     <!-- Archivo CSS -->
-    <link rel="stylesheet" href="maquetado-corregido.css">
+    <link rel="stylesheet" href="maquetado-corregido.css" />
     <!-- lucide icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
-<body>
-
+  <body>
     <!-- Contenedor principal -->
     <main class="contenedor-principal">
-        
-        <!-- banner -->
-        <section class="hero-slider">
+      <!-- banner -->
+      <section class="hero-slider">
+        <div class="slides">
+          <div class="slide active">
+            <img src="img/banner.jpeg" alt="Banner 1" />
+          </div>
 
-            <div class="slides">
+          <div class="slide">
+            <img src="img/banner.jpeg" alt="Banner 2" />
+          </div>
 
-                <div class="slide active">
-                    <img src="img/banner.jpeg" alt="Banner 1">
-                </div>
+          <div class="slide">
+            <img src="img/banner.jpeg" alt="Banner 3" />
+          </div>
+        </div>
+      </section>
 
-                <div class="slide">
-                    <img src="img/banner.jpeg" alt="Banner 2">
-                </div>
+      <!-- pruebas de itegracion -->
 
-                <div class="slide">
-                    <img src="img/banner.jpeg" alt="Banner 3">
-                </div>
-
-            </div>
-        </section>
-
-        
-
-<!-- pruebas de itegracion -->
-
-<!-- DOCUMENTO RECIENTES -->
-<!-- =========================
+      <!-- DOCUMENTO RECIENTES -->
+      <!-- =========================
      DOCUMENTOS RECIENTES
 ========================= -->
-<section class="docs-section">
-
-  <!-- Header -->
-  <div class="docs-header">
-
-    <div class="docs-title">
-      <div class="docs-icon">
-        <i  data-lucide="clock" class="doc-icon"></i>
-      </div>
-
-      <h2>Documentos recientes</h2>
-    </div>
-
-    <a href="#" class="see-all">
-      Ver todos
-    </a>
-
-  </div>
-
-  <!-- Carrusel -->
-  <div class="docs-carousel">
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type pdf">
-          PDF
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Hoja Técnica Mobil Delvac</h3>
-
-        <p>
-          Documento técnico con especificaciones
-          de lubricantes Mobil.
-        </p>
-
-        <div class="doc-footer">
-          <span>PDF / Aceites</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type excel">
-          XLS
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Tabla de Aplicaciones</h3>
-
-        <p>
-          Aplicaciones industriales y automotrices.
-        </p>
-
-        <div class="doc-footer">
-          <span>XLS / Vehículos</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type video">
-          MP4
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Capacitación</h3>
-
-        <p>
-          Videos y recursos para entrenamiento.
-        </p>
-
-        <div class="doc-footer">
-          <span>MP4 / Videos</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type pdf">
-          PDF
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Manual de Lubricación</h3>
-
-        <p>
-          Procedimientos y buenas prácticas.
-        </p>
-
-        <div class="doc-footer">
-          <span>PDF / Industrial</span>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- destacados -->
-
-<section class="docs-section">
-
-  <!-- Header -->
-  <div class="docs-header">
-
-    <div class="docs-title">
-      <div class="docs-icon">
-        <i  data-lucide="star" class="doc-icon"></i>
-      </div>
-
-      <h2>Documentos destacados </h2>
-    </div>
-
-    <a href="#" class="see-all">
-      Ver todos
-    </a>
-
-  </div>
-
-  <!-- Carrusel -->
-  <div class="docs-carousel">
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type pdf">
-          PDF
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Hoja Técnica Mobil Delvac</h3>
-
-        <p>
-          Documento técnico con especificaciones
-          de lubricantes Mobil.
-        </p>
-
-        <div class="doc-footer">
-          <span>PDF / Aceites</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type excel">
-          XLS
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Tabla de Aplicaciones</h3>
-
-        <p>
-          Aplicaciones industriales y automotrices.
-        </p>
-
-        <div class="doc-footer">
-          <span>XLS / Vehículos</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type video">
-          MP4
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Capacitación</h3>
-
-        <p>
-          Videos y recursos para entrenamiento.
-        </p>
-
-        <div class="doc-footer">
-          <span>MP4 / Videos</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="doc-card">
-
-      <div class="doc-thumb">
-        <img src="img/miniatura de documento.jpeg" alt="">
-        
-        <div class="doc-type pdf">
-          PDF
-        </div>
-      </div>
-
-      <div class="doc-body">
-        <h3>Manual de Lubricación</h3>
-
-        <p>
-          Procedimientos y buenas prácticas.
-        </p>
-
-        <div class="doc-footer">
-          <span>PDF / Industrial</span>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-            
-<!-- fin de pruebas de integración -->
-        
-
-        
-        <!-- botones -->
-         <section class="categorias">
-
-            <h2>Explorar por categoría</h2>
-
-            <div class="categorias-grid">
-
-                <div class="categoria-btn">
-
-                    <i data-lucide="book-open" class="categoria-icon"></i>
-
-                    <div class="categoria-texto">
-                        <span>Manuales</span>
-                        <p>Documentación técnica</p>
-                    </div>
-
-                </div>
-
-                <div class="categoria-btn">
-
-                    <i data-lucide="file-text" class="categoria-icon"></i>
-
-                    <div class="categoria-texto">
-                        <span>Hojas Técnicas</span>
-                        <p>Documentación técnica</p>
-                    </div>
-
-                </div>
-                
-                <div class="categoria-btn">
-
-                    <i data-lucide="table" class="categoria-icon"></i>
-
-                    <div class="categoria-texto">
-                        <span>Formatos</span>
-                        <p>Documentación técnica</p>
-                    </div>
-
-                </div>
-
-                <div class="categoria-btn">
-
-                    <i data-lucide="video" class="categoria-icon"></i>
-
-                    <div class="categoria-texto">
-                        <span>Videos</span>
-                        <p>Documentación técnica</p>
-                    </div>
-
-                </div>
-
-                <div class="categoria-btn">
-
-                    <i data-lucide="bus" class="categoria-icon"></i>
-
-                    <div class="categoria-texto">
-                        <span>Bus Escuela</span>
-                        <p>Documentación técnica</p>
-                    </div>
-
-                </div>
-
-
+      <section class="docs-section">
+        <!-- Header -->
+        <div class="docs-header">
+          <div class="docs-title">
+            <div class="docs-icon">
+              <i data-lucide="clock" class="doc-icon"></i>
             </div>
 
-        </section>
+            <h2>Documentos recientes</h2>
+          </div>
+
+          <a href="#" class="see-all"> Ver todos </a>
+        </div>
+
+        <!-- Carrusel -->
+        <div class="docs-carousel">
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type pdf">PDF</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Hoja Técnica Mobil Delvac</h3>
+
+              <p>
+                Documento técnico con especificaciones de lubricantes Mobil.
+              </p>
+
+              <div class="doc-footer">
+                <span>PDF / Aceites</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type excel">XLS</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Tabla de Aplicaciones</h3>
+
+              <p>Aplicaciones industriales y automotrices.</p>
+
+              <div class="doc-footer">
+                <span>XLS / Vehículos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type video">MP4</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Capacitación</h3>
+
+              <p>Videos y recursos para entrenamiento.</p>
+
+              <div class="doc-footer">
+                <span>MP4 / Videos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type pdf">PDF</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Manual de Lubricación</h3>
+
+              <p>Procedimientos y buenas prácticas.</p>
+
+              <div class="doc-footer">
+                <span>PDF / Industrial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- destacados -->
+
+      <section class="docs-section">
+        <!-- Header -->
+        <div class="docs-header">
+          <div class="docs-title">
+            <div class="docs-icon">
+              <i data-lucide="star" class="doc-icon"></i>
+            </div>
+
+            <h2>Documentos destacados</h2>
+          </div>
+
+          <a href="#" class="see-all"> Ver todos </a>
+        </div>
+
+        <!-- Carrusel -->
+        <div class="docs-carousel">
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type pdf">PDF</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Hoja Técnica Mobil Delvac</h3>
+
+              <p>
+                Documento técnico con especificaciones de lubricantes Mobil.
+              </p>
+
+              <div class="doc-footer">
+                <span>PDF / Aceites</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type excel">XLS</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Tabla de Aplicaciones</h3>
+
+              <p>Aplicaciones industriales y automotrices.</p>
+
+              <div class="doc-footer">
+                <span>XLS / Vehículos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type video">MP4</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Capacitación</h3>
+
+              <p>Videos y recursos para entrenamiento.</p>
+
+              <div class="doc-footer">
+                <span>MP4 / Videos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="doc-card">
+            <div class="doc-thumb">
+              <img src="img/miniatura de documento.jpeg" alt="" />
+
+              <div class="doc-type pdf">PDF</div>
+            </div>
+
+            <div class="doc-body">
+              <h3>Manual de Lubricación</h3>
+
+              <p>Procedimientos y buenas prácticas.</p>
+
+              <div class="doc-footer">
+                <span>PDF / Industrial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- fin de pruebas de integración -->
+
+      <!-- botones -->
+      <section class="categorias">
+        <h2>Explorar por categoría</h2>
+
+        <div class="categorias-grid">
+          <div class="categoria-btn">
+            <i data-lucide="book-open" class="categoria-icon"></i>
+
+            <div class="categoria-texto">
+              <span>Manuales</span>
+              <p>Documentación técnica</p>
+            </div>
+          </div>
+
+          <div class="categoria-btn">
+            <i data-lucide="file-text" class="categoria-icon"></i>
+
+            <div class="categoria-texto">
+              <span>Hojas Técnicas</span>
+              <p>Documentación técnica</p>
+            </div>
+          </div>
+
+          <div class="categoria-btn">
+            <i data-lucide="table" class="categoria-icon"></i>
+
+            <div class="categoria-texto">
+              <span>Formatos</span>
+              <p>Documentación técnica</p>
+            </div>
+          </div>
+
+          <div class="categoria-btn">
+            <i data-lucide="video" class="categoria-icon"></i>
+
+            <div class="categoria-texto">
+              <span>Videos</span>
+              <p>Documentación técnica</p>
+            </div>
+          </div>
+
+          <div class="categoria-btn">
+            <i data-lucide="bus" class="categoria-icon"></i>
+
+            <div class="categoria-texto">
+              <span>Bus Escuela</span>
+              <p>Documentación técnica</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-
-
-<script src="script.js"></script>
-<script>
-  lucide.createIcons();
-</script>
-
-</body>
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>

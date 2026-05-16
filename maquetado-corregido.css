@@ -1,138 +1,132 @@
 /*  Variables */
 :root {
   /* ExxonMobil Official Branding */
-  --mobil-red      : #FE000C;
-  --mobil-blue     : #0C479D;
+  --mobil-red: #fe000c;
+  --mobil-blue: #0c479d;
   --mobil-dark-blue: #001450;
-  --grey           : #5A5A5A;
-  --bg-light       : #F5F7FA;
-  --white          : #FFFFFF;
-  
+  --grey: #5a5a5a;
+  --bg-light: #f5f7fa;
+  --white: #ffffff;
+
   /* Semantic colors */
-  --text-main      : #1a2b35;
-  --text-muted     : #5A5A5A;
-  --border         : #E0E6ED;
-  --card-shadow    : 0 2px 8px rgba(0,20,80,.08);
-  --radius         : 6px;
-  --radius-sm      : 4px;
-  
+  --text-main: #1a2b35;
+  --text-muted: #5a5a5a;
+  --border: #e0e6ed;
+  --card-shadow: 0 2px 8px rgba(0, 20, 80, 0.08);
+  --radius: 6px;
+  --radius-sm: 4px;
+
   /* Legacy (mapped to new) */
-  --teal-dark      : var(--mobil-dark-blue);
-  --teal-mid       : var(--mobil-blue);
-  --teal-light     : var(--mobil-red);
-  --teal-pale      : #F0F4F9;
-  --accent         : var(--mobil-red);
-  --badge-bg       : var(--mobil-blue);
+  --teal-dark: var(--mobil-dark-blue);
+  --teal-mid: var(--mobil-blue);
+  --teal-light: var(--mobil-red);
+  --teal-pale: #f0f4f9;
+  --accent: var(--mobil-red);
+  --badge-bg: var(--mobil-blue);
 }
-
-
 
 /* ===================================== */
 /* RESET */
 /* ===================================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ===================================== */
 /* BODY */
 /* ===================================== */
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--bg-light);
-    color:#111;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-light);
+  color: #111;
 }
 
 /* ===================================== */
 /* CONTENEDOR PRINCIPAL */
 /* ===================================== */
 
-.contenedor-principal{
-    width:100%;
-    padding:30px;
+.contenedor-principal {
+  width: 100%;
+  padding: 30px;
 }
 
 /* ===================================== */
 /* HERO SLIDER */
 /* ===================================== */
-.hero-slider{
-    width:100%;
-    max-width:1200px;
-    height:445px;
-    border-radius: var(--radius);
-    margin:auto;
-    overflow:hidden;
-    position:relative;
-    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+.hero-slider {
+  width: 100%;
+  max-width: 1200px;
+  height: 445px;
+  border-radius: var(--radius);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Contenedor que se mueve */
-.slides{
-    display:flex;
-    width:100%;
-    height:100%;
-    transition:transform 1.0s cubic-bezier(0.22, 1, 0.36, 1);
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Cada slide */
-.slide{
-    min-width:100%;
-    height:100%;
+.slide {
+  min-width: 100%;
+  height: 100%;
 }
 
 /* Imagen */
-.slide img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-
-
-
 
 /* ===================================== */
 /* DOCUMENTOS */
 /* ===================================== */
 
-.documentos{
-    margin-top:50px;
+.documentos {
+  margin-top: 50px;
 }
 
 /* HEADER DE SECCIÓN */
 
-.section-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:25px;
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-.section-header h2{
-    font-size:28px;
+.section-header h2 {
+  font-size: 28px;
 }
 
-.section-header a{
-    text-decoration:none;
-    color:#0033a0;
-    font-weight:bold;
-    transition:0.3s;
+.section-header a {
+  text-decoration: none;
+  color: #0033a0;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.section-header a:hover{
-    opacity:0.7;
+.section-header a:hover {
+  opacity: 0.7;
 }
 
 /* GRID DE CARDS */
 
-.documentos-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-    gap:25px;
+.documentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
 }
 
 /* ===================================== */
@@ -143,431 +137,347 @@ body{
    SECTION
 ========================= */
 
-.docs-section{
-  width:100%;
-  padding:20px 0;
-  overflow:hidden;
+.docs-section {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
 }
 
 /* =========================
    HEADER
 ========================= */
 
-.docs-header{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  margin-bottom:18px;
+.docs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
 }
 
-.docs-title{
-  display:flex;
-  align-items:center;
-  gap:12px;
+.docs-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.docs-icon{
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.docs-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.doc-icon{
+.doc-icon {
   width: 30px;
-  height:30px;
-  color:#001450;
+  height: 30px;
+  color: #001450;
 
-  stroke-width:2.2;
+  stroke-width: 2.2;
 
-  transition:.3s ease;
+  transition: 0.3s ease;
 }
 
-.docs-title h2{
-  font-size:1.7rem;
-  font-weight:700;
-  margin:0;
-  color:#001450;
+.docs-title h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+  color: #001450;
 }
 
-.see-all{
-  text-decoration:none;
-  color:#0046b8;
-  font-weight:600;
-  font-size:.95rem;
+.see-all {
+  text-decoration: none;
+  color: #0046b8;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 /* =========================
    CARRUSEL
 ========================= */
 
-.docs-carousel{
-  display:flex;
-  gap:20px;
+.docs-carousel {
+  display: flex;
+  gap: 20px;
 
-  overflow-x:auto;
-  overflow-y:visible;
+  overflow-x: auto;
+  overflow-y: visible;
 
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 
-  padding:12px 4px 18px;
+  padding: 12px 4px 18px;
 
-  align-items:stretch;
+  align-items: stretch;
 }
 
-.docs-carousel::-webkit-scrollbar{
-  height:8px;
+.docs-carousel::-webkit-scrollbar {
+  height: 8px;
 }
 
-.docs-carousel::-webkit-scrollbar-thumb{
-  background:var(--bg-light);
-  border-radius:20px;
+.docs-carousel::-webkit-scrollbar-thumb {
+  background: var(--bg-light);
+  border-radius: 20px;
 }
 
 /* =========================
    CARD
 ========================= */
 
-.doc-card{
-  min-width:300px;
-  max-width:300px;
+.doc-card {
+  min-width: 300px;
+  max-width: 300px;
 
-  background:#fff;
-  border-radius:16px;
+  background: #fff;
+  border-radius: 16px;
 
-  overflow:visible;
+  overflow: visible;
 
-  border:1px solid #e4e8ee;
+  border: 1px solid #e4e8ee;
 
-  transition:.3s ease;
+  transition: 0.3s ease;
 
-  cursor:pointer;
+  cursor: pointer;
 
-  box-shadow:0 4px 12px rgba(0,0,0,.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
-  flex-shrink:0;
+  flex-shrink: 0;
 }
 
-.doc-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 6px 6px rgba(0,0,0,.12);
+.doc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.12);
 }
 
 /* =========================
    IMAGE
 ========================= */
 
-.doc-thumb{
-  position:relative;
-  height:180px;
-  overflow:hidden;
-  background:#eef2f7;
+.doc-thumb {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  background: #eef2f7;
 }
 
-.doc-thumb img{
-  width:300px;
-  height:300px;
-  object-fit:cover;
+.doc-thumb img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 
-  transition:.4s ease;
+  transition: 0.4s ease;
 }
 
-.doc-card:hover .doc-thumb img{
-  transform:scale(1.08);
+.doc-card:hover .doc-thumb img {
+  transform: scale(1.08);
 }
 
 /* =========================
    TYPE BADGE
 ========================= */
 
-.doc-type{
-  position:absolute;
-  top:14px;
-  left:14px;
+.doc-type {
+  position: absolute;
+  top: 14px;
+  left: 14px;
 
-  padding:5px 10px;
+  padding: 5px 10px;
 
-  border-radius:8px;
+  border-radius: 8px;
 
-  font-size:.75rem;
-  font-weight:700;
+  font-size: 0.75rem;
+  font-weight: 700;
 
-  color:#fff;
+  color: #fff;
 }
 
-.doc-type.pdf{
-  background:#e53935;
+.doc-type.pdf {
+  background: #e53935;
 }
 
-.doc-type.excel{
-  background:#1b9e4b;
+.doc-type.excel {
+  background: #1b9e4b;
 }
 
-.doc-type.video{
-  background:#111;
+.doc-type.video {
+  background: #111;
 }
 
 /* =========================
    BODY
 ========================= */
 
-.doc-body{
-  padding:18px;
+.doc-body {
+  padding: 18px;
 }
 
-.doc-body h3{
-  font-size:1.1rem;
-  font-weight:700;
-  margin-bottom:10px;
-  color:#001450;
+.doc-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #001450;
 }
 
-.doc-body p{
-  font-size:.88rem;
-  color:#687385;
-  line-height:1.5;
-  margin-bottom:18px;
+.doc-body p {
+  font-size: 0.88rem;
+  color: #687385;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 
-.doc-footer{
-  border-top:1px solid #e5e7eb;
-  padding-top:12px;
+.doc-footer {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
 
-  font-size:.82rem;
-  color:#6b7280;
-}
-
-
-
-/* ===================================== */
-/* CARD */
-/* ===================================== */
-
-.docs-card{
-    background:var(--white);
-    border-radius:18px;
-    padding:20px;
-    box-shadow:var(--card-shadow);
-    transition:0.3s;
-}
-
-.docs-card:hover{
-    transform:translateY(-6px);
-}
-
-/* ===================================== */
-/* PREVIEW */
-/* ===================================== */
-
-.preview-container{
-    position:relative;
-    width:100%;
-    height:180px;
-    background:#f1f1f1;
-    border-radius:14px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-    margin-bottom:20px;
-}
-
-/* ICONO SUPERIOR IZQUIERDO */
-
-.file-type{
-    position:absolute;
-    top:12px;
-    left:12px;
-    width:45px;
-    z-index:2;
-}
-
-/* IMAGEN PREVIEW */
-
-.preview-img{
-    width:120px;
-    object-fit:contain;
-}
-
-/* TEXOS CARD */
-
-.docs-card h3{
-    font-size:21px;
-    margin-bottom:10px;
-    line-height:1.3;
-}
-
-.docs-card p{
-    color:gray;
-    font-size:15px;
+  font-size: 0.82rem;
+  color: #6b7280;
 }
 
 /* ===================================== */
 /* CATEGORIAS */
 /* ===================================== */
 
-.categorias{
-    margin-top:60px;
+.categorias {
+  margin-top: 60px;
 }
 
-.categorias h2{
-    font-size:28px;
-    margin-bottom:25px;
+.categorias h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
 /* GRID BOTONES */
 
-.categorias-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
-    gap:20px;
+.categorias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
 /*--- boton---*/
 
-.categoria-btn{
-    background:var(--white);
+.categoria-btn {
+  background: var(--white);
 
-    border-radius:14px;
+  border-radius: 14px;
 
-    padding:10px 18px;
+  padding: 10px 18px;
 
-    display:flex;
-    align-items:center;
-    gap:15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
-    cursor:pointer;
+  cursor: pointer;
 
-    transition:0.3s;
+  transition: 0.3s;
 
-    box-shadow:var(--card-shadow);
+  box-shadow: var(--card-shadow);
 
-    min-height:50px;
+  min-height: 50px;
 }
 /*--- hover---*/
 
-.categoria-btn:hover{
-    transform:translateY(-5px);
+.categoria-btn:hover {
+  transform: translateY(-5px);
 
-    background:var(--mobil-blue);
+  background: var(--mobil-blue);
 
-    color:white;
+  color: white;
 }
 
 /*--- icon---*/
 
-.categoria-icon{
-    width:30px;
-    height:30px;
+.categoria-icon {
+  width: 30px;
+  height: 30px;
 
-    color:var(--mobil-dark-blue);
+  color: var(--mobil-dark-blue);
 
-    stroke-width:2.2;
+  stroke-width: 2.2;
 
-    transition:0.3s;
+  transition: 0.3s;
 
-    flex-shrink:0;
+  flex-shrink: 0;
 }
 /*--- contenedor texto---*/
 
-.categoria-texto{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+.categoria-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /*--- titulo---*/
 
-.categoria-texto span{
-    font-weight: bold;
-    font-size:16px;
-    font-weight:700;
-    color:var(--mobil-dark-blue);
+.categoria-texto span {
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--mobil-dark-blue);
 }
 
 /*--- texto secudario ---*/
-.categoria-texto p{
-    font-size:13px;
-    color: var(--text-secondary);
-    margin-top:4px;
+.categoria-texto p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
 }
 
 /*--- color del texto hover---*/
 
 .categoria-btn:hover .categoria-texto span,
-.categoria-btn:hover .categoria-texto p{
-    color:var(--white);
+.categoria-btn:hover .categoria-texto p {
+  color: var(--white);
 }
 
 /*--- hover del icon ---*/
 
-.categoria-btn:hover .categoria-icon{
-    color:white;
+.categoria-btn:hover .categoria-icon {
+  color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ===================================== */
 /* RESPONSIVE */
 /* ===================================== */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .contenedor-principal {
+    padding: 20px;
+  }
 
-    .contenedor-principal{
-        padding:20px;
-    }
+  .hero-slider {
+    height: 220px;
+  }
 
-    .hero-slider{
-        height:220px;
-    }
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .section-header{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:10px;
-    }
+  .section-header h2 {
+    font-size: 24px;
+  }
 
-    .section-header h2{
-        font-size:24px;
-    }
+  .categorias h2 {
+    font-size: 24px;
+  }
 
-    .categorias h2{
-        font-size:24px;
-    }
-
-    .docs-card h3{
-        font-size:18px;
-    }
-
+  .docs-card h3 {
+    font-size: 18px;
+  }
 }
 
-@media(max-width:480px){
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 180px;
+  }
 
-    .hero-slider{
-        height:180px;
-    }
+  .preview-container {
+    height: 150px;
+  }
 
-    .preview-container{
-        height:150px;
-    }
+  .preview-img {
+    width: 90px;
+  }
 
-    .preview-img{
-        width:90px;
-    }
-
-    .categoria-btn{
-        padding:20px;
-    }
-
+  .categoria-btn {
+    padding: 20px;
+  }
 }
